@@ -1,0 +1,200 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Light Gray Background */
+    color: #495057; /* Dark Gray Text */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40; /* Dark Background */
+    color: #fff; /* White Text */
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: 700; /* Bold font weight */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Added text shadow */
+    color: #f8da69; /* Gold Text */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #f8f9fa; /* Light Background */
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+    padding: 0.75rem 0;
+}
+
+nav a {
+    color: #495057; /* Dark Gray Text */
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    display: inline-block;
+    border-radius: 0.25rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /* Primary Color on Hover */
+}
+
+/* Container Styles */
+.container {
+    max-width: 1140px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #fff; /* White Background */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: #343a40; /* Dark Gray */
+    margin-bottom: 1rem;
+}
+
+h2 {
+    border-bottom: 0.125rem solid #dee2e6;
+    padding-bottom: 0.5rem;
+}
+
+/* Project Styles */
+.project {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+}
+
+.project h3 {
+    margin-bottom: 0.75rem;
+    color: #343a40; /* Dark Gray */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #343a40; /* Dark Background */
+    color: #fff; /* White Text */
+    border-top: 1px solid #dee2e6;
+}
+
+/* Contact Form Styles */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-left-title h1 {
+    font-weight: 600;
+    color: #007bff; /* Primary Color */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 80px;
+    height: 4px;
+    background-color: #007bff; /* Primary Color */
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.contact-inputs {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #495057; /* Dark Gray */
+    background-color: #fff; /* White Background */
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.contact-inputs:focus {
+    border-color: #007bff; /* Primary Color on Focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.contact-inputs::placeholder {
+    color: #6c757d; /* Gray Placeholder */
+    opacity: 1;
+}
+
+.contact-left textarea {
+    height: 150px;
+    padding-top: 0.75rem;
+    border-radius: 0.25rem;
+    resize: vertical;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff; /* White Text */
+    gap: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #007bff; /* Primary Color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-left button:hover {
+    background-color: #0056b3; /* Darker Primary Color on Hover */
+}
+
+.contact-left button img {
+    width: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .contact-inputs {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+}
